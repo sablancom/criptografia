@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :pets
+  get 'search/create'
+
   devise_for :users
   root 'welcome#index'
   resources 'puppies', :only => 'index'

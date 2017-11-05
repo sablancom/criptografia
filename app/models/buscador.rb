@@ -1,0 +1,2 @@
+class Buscador < ApplicationRecord
+end

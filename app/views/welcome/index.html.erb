@@ -20,5 +20,15 @@
     <p>Marketing sites usually have a third thing here, but when you already
     have puppies and security, you only need two features.</p>
   </div>
- 
+  <div class="col-md-4">
+    <div id="resultados">
+      
+    </div>
+     <%= form_tag "search/create", method: :get, remote: true, id: "search-form" do %>
+     <%= text_field_tag :keyword, nil , placeholder: "Que estas buscando "%>
+     <%= content_tag :button, type: :submit do %>
+     Buscar 
+     <%end%>
+  <%end%>
+ </div>
 </div>
