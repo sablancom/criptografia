@@ -49,3 +49,5 @@ group :development do
   gem 'spring'
 end
 
+##ssl tests
+gem 'thin'

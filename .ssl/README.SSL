@@ -1,0 +1,15 @@
+#UTIL COMMANDS
+
+#TUTORIAL
+https://blog.botreetechnologies.com/enable-ssl-in-developement-using-thin-2a4bd1af500d
+
+#RESTART BROWSER
+chrome://restart
+
+#START HTTP
+#comment this line into application.rb: config.force_ssl = true
+#and run:
+bundle exec thin start -p 3000
+
+#START HTTPS
+bundle exec thin start -p 3001 --ssl --ssl-key-file .ssl/localhost.key --ssl-cert-file .ssl/localhost.crt
